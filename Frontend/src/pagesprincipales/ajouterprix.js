@@ -1,42 +1,23 @@
 import { useState } from "react";
+import Navbar from "../components/Navbar";
+import ProductForm from "../components/ProductForm";
+import PriceList from "../components/PriceList";
 
-function AjouterPrix() {
-  const [prix, setPrix] = useState("");
-  const [magasin, setMagasin] = useState("");
+export default function AjouterPrix() {
+  const [prices, setPrices] = useState([]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Prix enregistré !");
+  const handleAddPrice = (newPrice) => {
+    setPrices([...prices, newPrice]);
   };
 
   return (
-    <div className="container mt-5" style={{ maxWidth: "500px" }}>
-      <h2 className="text-center mb-4">Ajouter un Prix</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label className="form-label">Prix (XOF)</label>
-          <input
-            type="number"
-            className="form-control"
-            value={prix}
-            onChange={(e) => setPrix(e.target.value)}
-          />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Magasin</label>
-          <input
-            type="text"
-            className="form-control"
-            value={magasin}
-            onChange={(e) => setMagasin(e.target.value)}
-          />
-        </div>
-        <button type="submit" className="btn btn-secondary w-100">
-          Enregistrer
-        </button>
-      </form>
+    <div className="min-h-screen bg-gray-100">
+      <Navbar />
+      <div className="max-w-2xl mx-auto p-4">
+        <h2 className="text-2xl font-bold mb-4">Ajouter un prix</h2>
+        <ProductForm onSubmit={handleAddPrice} />
+        <PriceList prices={prices} />
+      </div>
     </div>
   );
 }
-
-export default AjouterPrix;
