@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.js";     // fichier: src/components/navbar.js
 import Accueil from "./pagesprincipales/accueil"; 
@@ -22,5 +23,29 @@ function App() {
     </Router>
   );
 }
+=======
+// import { useEffect, useState } from "react";
 
-export default App;
+// function App() {
+//   const [produits, setProduits] = useState([]);
+
+//   useEffect(() => {
+//     fetch("http://127.0.0.1:8000/api/produits/")
+//       .then(res => res.json())
+//       .then(data => setProduits(data));
+//   }, []);
+
+//   return (
+//     <div>
+//       <h1>Liste des produits</h1>
+//       <ul>
+//         {produits.map(p => (
+//           <li key={p.id}>{p.nom}</li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
+>>>>>>> 430b56e (Ajout du Backend Django)
+
+// export default App;
