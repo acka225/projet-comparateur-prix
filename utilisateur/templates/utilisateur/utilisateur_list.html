@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Utilisateurs{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Liste des utilisateurs</h1>
+<ul class="list-group">
+    {% for utilisateur in utilisateurs %}
+        <li class="list-group-item">
+            <a href="{% url 'utilisateur_detail' utilisateur.pk %}">
+                {{ utilisateur.nom }} {{ utilisateur.prenom }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

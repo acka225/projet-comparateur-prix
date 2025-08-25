@@ -1,0 +1,42 @@
+[
+  {
+    "model": "magasin.magasin",
+    "pk": 1,
+    "fields": {
+      "nom": "Supermarché Cocody",
+      "adresse": "Rue des Jardins, Cocody",
+      "telephone": "+225 01 23 45 67",
+      "commune": 1
+    }
+  },
+  {
+    "model": "magasin.magasin",
+    "pk": 2,
+    "fields": {
+      "nom": "Centre Commercial Treichville",
+      "adresse": "Av. 12, Treichville",
+      "telephone": "+225 01 98 76 54",
+      "commune": 2
+    }
+  },
+  {
+    "model": "magasin.magasin",
+    "pk": 3,
+    "fields": {
+      "nom": "Magasin Plateau",
+      "adresse": "Bd de la République, Plateau",
+      "telephone": "+225 01 11 22 33",
+      "commune": 3
+    }
+  },
+  {
+    "model": "magasin.magasin",
+    "pk": 4,
+    "fields": {
+      "nom": "Boutique Koko",
+      "adresse": "Rue du Marché, Koko",
+      "telephone": "+225 01 44 55 66",
+      "commune": 4
+    }
+  }
+]

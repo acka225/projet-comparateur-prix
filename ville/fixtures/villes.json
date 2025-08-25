@@ -1,0 +1,34 @@
+[
+  {
+    "model": "ville.ville",
+    "pk": 1,
+    "fields": {
+      "nom": "Abidjan",
+      "pays": "Côte d'Ivoire"
+    }
+  },
+  {
+    "model": "ville.ville",
+    "pk": 2,
+    "fields": {
+      "nom": "Bouaké",
+      "pays": "Côte d'Ivoire"
+    }
+  },
+  {
+    "model": "ville.ville",
+    "pk": 3,
+    "fields": {
+      "nom": "Yamoussoukro",
+      "pays": "Côte d'Ivoire"
+    }
+  },
+  {
+    "model": "ville.ville",
+    "pk": 4,
+    "fields": {
+      "nom": "San Pedro",
+      "pays": "Côte d'Ivoire"
+    }
+  }
+]

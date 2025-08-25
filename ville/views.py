@@ -1,14 +1,11 @@
 from django.shortcuts import render
-from django.shortcuts import render, get_object_or_404
 from .models import Ville
+from django.shortcuts import render, get_object_or_404
 
 def ville_list(request):
     villes = Ville.objects.all()
-    return render(request, 'ville/ville_list.html', {'villes': villes})
+    return render(request, "ville/ville_list.html", {"villes": villes})
 
 def ville_detail(request, pk):
     ville = get_object_or_404(Ville, pk=pk)
-    return render(request, 'ville/ville_detail.html', {'ville': ville})
-
-
-
+    return render(request, "ville/ville_detail.html", {"ville": ville})

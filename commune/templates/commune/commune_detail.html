@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Commune : {{ commune.nom }}{% endblock %}
+
+{% block content %}
+<h1>{{ commune.nom }}</h1>
+<p><strong>Ville :</strong> {{ commune.ville.nom }}</p>
+<p><strong>Population :</strong> {{ commune.population }} habitants</p>
+<a href="{% url 'commune_list' %}" class="btn btn-secondary">← Retour</a>
+{% endblock %}

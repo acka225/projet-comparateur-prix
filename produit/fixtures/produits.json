@@ -1,0 +1,29 @@
+[
+  {
+    "model": "produit.produit",
+    "pk": 1,
+    "fields": {
+      "nom": "Jus d'orange",
+      "marque": "Tropical",
+      "categorie": "Boisson"
+    }
+  },
+  {
+    "model": "produit.produit",
+    "pk": 2,
+    "fields": {
+      "nom": "Pain de mie",
+      "marque": "Panor",
+      "categorie": "Boulangerie"
+    }
+  },
+  {
+    "model": "produit.produit",
+    "pk": 3,
+    "fields": {
+      "nom": "Savon",
+      "marque": "Dove",
+      "categorie": "Hygiène"
+    }
+  }
+]

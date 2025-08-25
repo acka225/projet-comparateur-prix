@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Villes de Côte d’Ivoire{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Liste des villes principales de Côte d’Ivoire</h1>
+<ul class="list-group">
+    {% for ville in villes %}
+        <li class="list-group-item">
+            <a href="{% url 'ville_detail' ville.pk %}">{{ ville.nom }}</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

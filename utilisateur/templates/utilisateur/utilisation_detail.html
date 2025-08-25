@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Utilisateur : {{ utilisateur.nom }}{% endblock %}
+
+{% block content %}
+<h1>{{ utilisateur.nom }} {{ utilisateur.prenom }}</h1>
+<p><strong>Email :</strong> {{ utilisateur.email }}</p>
+<p><strong>Téléphone :</strong> {{ utilisateur.telephone }}</p>
+<a href="{% url 'utilisateur_list' %}" class="btn btn-secondary">← Retour</a>
+{% endblock %}

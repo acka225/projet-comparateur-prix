@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Produits{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Produits disponibles</h1>
+<ul class="list-group">
+    {% for produit in produits %}
+        <li class="list-group-item">
+            <a href="{% url 'produit_detail' produit.pk %}">{{ produit.nom }}</a> - {{ produit.prix }} FCFA
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

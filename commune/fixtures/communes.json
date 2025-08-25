@@ -1,0 +1,50 @@
+[
+  {
+    "model": "commune.commune",
+    "pk": 1,
+    "fields": {
+      "nom": "Cocody",
+      "ville": 1
+    }
+  },
+  {
+    "model": "commune.commune",
+    "pk": 2,
+    "fields": {
+      "nom": "Treichville",
+      "ville": 1
+    }
+  },
+  {
+    "model": "commune.commune",
+    "pk": 3,
+    "fields": {
+      "nom": "Plateau",
+      "ville": 1
+    }
+  },
+  {
+    "model": "commune.commune",
+    "pk": 4,
+    "fields": {
+      "nom": "Koko",
+      "ville": 2
+    }
+  },
+  {
+    "model": "commune.commune",
+    "pk": 5,
+    "fields": {
+      "nom": "Bouaké Centre",
+      "ville": 2
+    }
+  },
+  {
+    "model": "commune.commune",
+    "pk": 6,
+    "fields": {
+      "nom": "Yamoussoukro Ville",
+      "ville": 3
+    }
+  }
+]

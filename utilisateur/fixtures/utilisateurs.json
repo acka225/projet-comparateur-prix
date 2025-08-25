@@ -1,0 +1,33 @@
+[
+  {
+    "model": "utilisateur.utilisateur",
+    "pk": 1,
+    "fields": {
+      "username": "olivia",
+      "password": "pbkdf2_sha256$260000$examplehash1234567890$examplehash",
+      "email": "olivia@example.com",
+      "first_name": "Olivia",
+      "last_name": "Kacou",
+      "telephone": "+2250707817883",
+      "ville": 1,
+      "is_staff": true,
+      "is_superuser": true
+    }
+  },
+  {
+    "model": "utilisateur.utilisateur",
+    "pk": 2,
+    "fields": {
+      "username": "user1",
+      "password": "azerty123",
+      "email": "user1@example.com",
+      "first_name": "User",
+      "last_name": "One",
+      "telephone": "+2250102030405",
+      "ville": 2,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  }
+]
+

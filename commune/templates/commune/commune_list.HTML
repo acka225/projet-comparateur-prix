@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Communes{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Communes d’Abidjan et des grandes villes</h1>
+<ul class="list-group">
+    {% for commune in communes %}
+        <li class="list-group-item">
+            <a href="{% url 'commune_detail' commune.pk %}">{{ commune.nom }}</a> ({{ commune.ville.nom }})
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

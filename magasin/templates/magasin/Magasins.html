@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Magasins{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Magasins disponibles</h1>
+<ul class="list-group">
+    {% for magasin in magasins %}
+        <li class="list-group-item">
+            <a href="{% url 'magasin_detail' magasin.pk %}">{{ magasin.nom }}</a> ({{ magasin.commune.nom }})
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

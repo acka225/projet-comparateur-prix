@@ -37,12 +37,11 @@ MIDDLEWARE = [
 
 
 ROOT_URLCONF = "backend.config.urls"
-
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
-        "APP_DIRS": True,
+        "DIRS": [BASE_DIR / "templates"],  # dossier global
+        "APP_DIRS": True,                  # charge app/templates/...
         "OPTIONS": {
             "context_processors": [
                 "django.template.context_processors.debug",
@@ -53,6 +52,11 @@ TEMPLATES = [
         },
     },
 ]
+
+STATIC_URL = "static/"
+STATICFILES_DIRS = [BASE_DIR / "static"]  # si tu veux un CSS global
+
+
 AUTH_USER_MODEL = "utilisateur.Utilisateur"
 
 WSGI_APPLICATION = "backend.config.wsgi.application"
@@ -83,7 +87,6 @@ LANGUAGE_CODE = "en-us"
 TIME_ZONE = "UTC"
 USE_TZ = True
 
-# Fichiers statiques
-STATIC_URL = "static/"
+
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
