@@ -3,8 +3,8 @@ from pathlib import Path
 from decouple import config
 
 # Chemin de base du projet
-BASE_DIR = Path(__file__).resolve().parent.parent
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY et DEBUG depuis .env
 SECRET_KEY = config('SECRET_KEY', default='changeme-secret-key')
 DEBUG = config('DEBUG', default=True, cast=bool)
@@ -40,8 +40,8 @@ ROOT_URLCONF = "backend.config.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],  # dossier global
-        "APP_DIRS": True,                  # charge app/templates/...
+        "DIRS": [BASE_DIR.parent / "templates"],  # <-- remonte d’un cran
+        "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
                 "django.template.context_processors.debug",

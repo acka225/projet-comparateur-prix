@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% block title %}Magasin : {{ magasin.nom }}{% endblock %}
 
 {% block content %}
@@ -6,5 +7,6 @@
 <p><strong>Commune :</strong> {{ magasin.commune.nom }}</p>
 <p><strong>Adresse :</strong> {{ magasin.adresse }}</p>
 <p><strong>Description :</strong> {{ magasin.description }}</p>
+
 <a href="{% url 'magasin_list' %}" class="btn btn-secondary">← Retour</a>
 {% endblock %}
